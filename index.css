@@ -1,0 +1,43 @@
+#image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#image.active {
+  display: none;
+}
+
+#project1 {
+  display: none;
+  z-index: -11;
+}
+
+#project1.active {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 10000;
+}
+
+#close {
+  top: 20px;
+  left: 100px;
+}
+.modal {
+  position: fixed;
+  height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 30px;
+  display: none;
+}
+
+.modal.active {
+  display: block;
+}
